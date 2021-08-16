@@ -42,16 +42,16 @@ public static void main(String[] args){
     if(date <= Ndate){
     dc = true;
     }
-    boolean mc = false;
-    if(dc =true){
-    OutMou = 12- mouth+Nmouth-1;
-    }else{
+    if(dc){
     OutMou = 12- mouth+Nmouth;
+    }else{
+    OutMou = 12- mouth+Nmouth-1;
     }
     if(OutMou>=12){
     OutMou-=12;
     }
-    if(mouth< Nmouth){
+    boolean mc = false;
+    if(mouth <= Nmouth){
     mc = true;
 }
 if(mc){
